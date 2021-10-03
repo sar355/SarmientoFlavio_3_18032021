@@ -43,22 +43,22 @@ p {
 /* .............GENERAL...............*/
 
 /* .............LOADER START...............*/
-// .loader {
-//   background: radial-gradient(circle, #9356dc, #ff79da, #99e2d0);
-//   font-size: x-large;
-//   width: 100%;
-//   height: 100%;
-//   line-height: 100%;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   position: fixed;
-//   top: 0px;
-//   left: 0px;
-//   z-index: 9999;
-//   pointer-events: none;
-//   animation: loader 1s ease-in-out 3s forwards;
-// }
+.loader {
+  background: radial-gradient(circle, #9356dc, #ff79da, #99e2d0);
+  font-size: x-large;
+  width: 100%;
+  height: 100%;
+  line-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 9999;
+  pointer-events: none;
+  animation: loader 1s ease-in-out 3s forwards;
+}
 
 @keyframes loader {
   0% {
