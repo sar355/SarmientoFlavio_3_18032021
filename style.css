@@ -1,0 +1,760 @@
+@charset "UTF-8";
+/* .............OHMYFOOD ACCUEIL..........*/
+/* .............GENERAL..........*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+/* .............GENERAL...............*/
+/* .............LOADER START...............*/
+@-webkit-keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.loader__food {
+  margin-bottom: 30px;
+}
+
+.loader__food span {
+  display: inline-block;
+  -webkit-animation: grow1 1.5s linear infinite;
+          animation: grow1 1.5s linear infinite;
+}
+
+@-webkit-keyframes grow1 {
+  0% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  50% {
+    -webkit-transform: scaleY(1.5);
+            transform: scaleY(1.5);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+@keyframes grow1 {
+  0% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  50% {
+    -webkit-transform: scaleY(1.5);
+            transform: scaleY(1.5);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+.loader__fork {
+  text-align: center;
+  -webkit-animation: rotate 1.5s linear infinite;
+          animation: rotate 1.5s linear infinite;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/* .............LOADER END...............*/
+/* .............HEADER................*/
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px 0;
+  -webkit-box-shadow: 0px 0px 10px #817a7a;
+          box-shadow: 0px 0px 10px #817a7a;
+}
+
+.header__img {
+  width: 170px;
+}
+
+/* .............HEADER................*/
+/* .............LOCALISATION..........*/
+.main__localisation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #eaeaea;
+  margin-top: 5px;
+}
+
+.main__localisation i {
+  position: relative;
+  left: -18px;
+  bottom: 2px;
+  font-size: 20px;
+}
+
+/* .............LOCALISATION...........*/
+/* .............EXPLORE...........*/
+.explore {
+  text-align: center;
+  padding: 20px 30px 55px 30px;
+  background-color: #f6f6f6;
+}
+
+.explore p {
+  font-weight: 300;
+}
+
+.explore__btn {
+  color: white;
+  display: inline-block;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background-image: linear-gradient(#ff79da, #9356dc);
+  -webkit-box-shadow: 2px 5px 8px #a8a0a0;
+          box-shadow: 2px 5px 8px #a8a0a0;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+  padding: 15px 20px;
+  margin-top: 10px;
+  border-radius: 30px;
+}
+
+.explore__btn--effect:hover {
+  /*Trouver la propriété pour rendre le fond plus clar au survol*/
+  -webkit-box-shadow: 2px 5px 10px #363333;
+          box-shadow: 2px 5px 10px #363333;
+  background-color: #ae80e5;
+  background-blend-mode: lighten;
+}
+
+/* .............EXPLORE............*/
+/* .............TUTORIAL............*/
+.tutorial {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.tutorial h1 {
+  margin-left: 15px;
+}
+
+.tutorial__step {
+  margin-top: 15px;
+}
+
+.tutorial__step__1, .tutorial__step__2, .tutorial__step__3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f6f6f6;
+  -webkit-box-shadow: 2px 5px 8px #e3dcdc;
+          box-shadow: 2px 5px 8px #e3dcdc;
+  border-radius: 20px;
+  padding: 20px 20px;
+  margin: 15px 20px 20px 30px;
+  cursor: pointer;
+}
+
+.tutorial__step__1:hover, .tutorial__step__2:hover, .tutorial__step__3:hover {
+  background-color: #f2eafb;
+}
+
+.tutorial__step .circle {
+  background-color: #9356dc;
+  color: white;
+  margin: 0px 15px 0px -33px;
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+
+.tutorial__step .fas {
+  color: #9356dc;
+  margin-right: 15px;
+}
+
+.tutorial__step div {
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .tutorial__step {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+/* .............TUTORIAL..............*/
+/* .............RESTAURANTS...........*/
+.restaurants {
+  background-color: #f6f6f6;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.restaurants h1 {
+  margin-left: 15px;
+}
+
+.block-restaurant {
+  position: relative;
+  margin: 15px 20px;
+  background-color: white;
+  -webkit-box-shadow: 2px 5px 8px #a8a0a0;
+          box-shadow: 2px 5px 8px #a8a0a0;
+  border-radius: 15px;
+}
+
+.block-restaurant::before {
+  content: "Nouveau";
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 8px;
+  background-color: #99e2d0;
+  color: #008766;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+.block-restaurant__img {
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.block-restaurant__content div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 15px;
+}
+
+.block-restaurant__content p {
+  padding-bottom: 20px;
+  margin-left: 10px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.block-restaurant--mb {
+  margin-bottom: 0px;
+}
+
+.content h3 {
+  margin-bottom: 5px;
+}
+
+.content div .far {
+  position: relative;
+  top: 10px;
+  font-size: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .restaurant__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .block-restaurant__img {
+    width: 340px;
+  }
+}
+
+/* .............RESTAURANTS...........*/
+/* .............FOOTER...........*/
+.footer {
+  background-color: #363636;
+  color: #f6f6f6;
+  padding: 20px 0 20px 20px;
+}
+
+.footer h1 {
+  margin-top: 0px;
+  font-style: italic;
+}
+
+.footer__list i {
+  width: 10px;
+}
+
+.footer__list a {
+  padding-left: 15px;
+}
+
+.footer__list .pop {
+  padding-left: 0px;
+}
+
+li {
+  padding-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    text-align: center;
+  }
+}
+
+/* .............FOOTER...........*/
+/* .............OHMYFOOD ACCUEIL END..........*/
+/* ...////////////////////////////////...*/
+/* ...////////////////////////////////...*/
+/* .............MENU 1..........*/
+/* .............HEADER 1..........*/
+.header-menu1 {
+  background-color: #f6f6f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 0;
+}
+
+.header-menu1 i {
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+.header-menu1 .header__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 170px;
+}
+
+.header-menu1 .header__img img {
+  width: 170px;
+}
+
+/* .............HEADER 1..........*/
+/* .............PHOTO RESTAURANT 1..........*/
+.img-restaurant {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 500px;
+}
+
+.img-restaurant--lanoteenchantee {
+  height: 270px;
+}
+
+/* .............PHOTO RESTAURANT 1 ..........*/
+/* .............MAIN CARTE START ..........*/
+.main-carte {
+  background-color: #f6f6f6;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  position: relative;
+  margin-top: -57px;
+}
+
+.menu {
+  margin: 0px 15px;
+}
+
+/* .............TITLE START ..........*/
+.title-restaurant {
+  margin-bottom: 50px;
+  padding-top: 40px;
+}
+
+.title-restaurant div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0px 15px;
+}
+
+.title-restaurant div h1 {
+  font-style: italic;
+  padding-bottom: 1px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+/* ..Nouveau code..*/
+.relative {
+  position: relative;
+}
+
+.relative .heart1 {
+  cursor: pointer;
+  font-size: 25px;
+  color: grey;
+  z-index: 2;
+  -webkit-transition: color 1s ease-in-out;
+  transition: color 1s ease-in-out;
+}
+
+.relative .heart1:hover + .heart2 {
+  opacity: 1;
+}
+
+.relative .heart1:hover {
+  color: transparent;
+}
+
+.heart2 {
+  position: absolute;
+  top: 10px;
+  font-size: 24px;
+  background: -webkit-linear-gradient(#ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-transition: opacity 1.5s ease-in-out;
+  transition: opacity 1.5s ease-in-out;
+  opacity: 0;
+  z-index: 1;
+}
+
+.heart3 {
+  position: absolute;
+  top: 10px;
+  font-size: 24px;
+  color: white;
+  -webkit-transition: opacity 1.5s ease-in-out;
+  transition: opacity 1.5s ease-in-out;
+  z-index: 0;
+}
+
+/* ..Nouveau code..*/
+.heart2--accueil {
+  position: absolute;
+  top: 10px;
+  color: white;
+}
+
+.heart2--menu {
+  position: absolute;
+  top: 0px;
+}
+
+.heart3--menu {
+  position: absolute;
+  top: 0px;
+  color: white;
+}
+
+/* .............TITLE END..........*/
+/* .............CARD MENU START..........*/
+.menu__sous-menu {
+  position: relative;
+}
+
+.menu__sous-menu__title {
+  font-weight: normal;
+  margin-top: 40px;
+}
+
+.menu__sous-menu__title::before {
+  content: "";
+  width: 61px;
+  height: 3px;
+  position: absolute;
+  top: 30px;
+  bottom: 0px;
+  background-color: #99e2d0;
+}
+
+@-webkit-keyframes grow {
+  from {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes grow {
+  from {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.block-menu {
+  position: relative;
+  background-color: white;
+  border-radius: 20px;
+  -webkit-box-shadow: 2px 5px 8px #e3dcdc;
+          box-shadow: 2px 5px 8px #e3dcdc;
+  margin-bottom: 15px;
+  padding: 0px 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-animation: grow 2s ease-in forwards;
+          animation: grow 2s ease-in forwards;
+  -webkit-transition: padding-right 500ms ease-in-out;
+  transition: padding-right 500ms ease-in-out;
+}
+
+.block-menu:hover > .validation-menu {
+  -webkit-transform: translateX(-51px);
+          transform: translateX(-51px);
+  opacity: 1;
+}
+
+.block-menu:hover > .validation-menu div {
+  -webkit-transform: rotate(0turn);
+          transform: rotate(0turn);
+}
+
+.block-menu:hover {
+  padding-right: 70px;
+}
+
+.block-menu h3 {
+  margin: 0px;
+  padding-top: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.block-menu__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.block-menu__content p {
+  margin: 0px;
+  padding: 10px 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.block-menu__content div {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.validation-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  right: -51px;
+  top: 0px;
+  background-color: #99e2d0;
+  font-size: 20px;
+  width: 30px;
+  height: 71px;
+  padding: 0px 25px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  opacity: 1;
+}
+
+.validation-menu .rotate {
+  -webkit-transform: rotate(-1turn);
+          transform: rotate(-1turn);
+  -webkit-transition: 500ms linear;
+  transition: 500ms linear;
+}
+
+.validation-menu .rotate i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
+  color: white;
+}
+
+.menu .block-menu--delay1 {
+  -webkit-animation: grow 2s 0.25s ease-in backwards;
+          animation: grow 2s 0.25s ease-in backwards;
+}
+
+.menu .block-menu--delay2 {
+  -webkit-animation: grow 2s 0.5s ease-in backwards;
+          animation: grow 2s 0.5s ease-in backwards;
+}
+
+.menu .block-menu--delay3 {
+  -webkit-animation: grow 2s 0.75s ease-in backwards;
+          animation: grow 2s 0.75s ease-in backwards;
+}
+
+/* .............CARD MENU END..........*/
+/* .............EXPLORE ACCUEIL START..........*/
+.explore--accueil {
+  padding-bottom: 80px;
+}
+
+.explore--accueil .explore__btn--accueil {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.explore--accueil .explore__btn--accueil--effect:hover {
+  -webkit-box-shadow: 2px 5px 10px #363333;
+          box-shadow: 2px 5px 10px #363333;
+  background-color: #ae80e5;
+  background-blend-mode: lighten;
+}
+
+/* .............EXPLORE ACCUEIL END..........*/
+/* .............FOOTER START..........*/
+.footer--accueil {
+  width: 100%;
+}
+
+/* .............FOOTER END..........*/
+/* .............MAIN CARTE END ..........*/
+/* .............MENU 1..........*/
+/*# sourceMappingURL=style.css.map */
