@@ -237,8 +237,6 @@ p {
   }
 }
 
-
-
 .block-restaurant {
   position: relative;
   margin: 15px 20px;
@@ -341,7 +339,7 @@ li {
   padding-bottom: 10px;
 }
 
-@media screen and (min-width: 768px)  {
+@media screen and (min-width: 768px) {
   footer {
     text-align: center;
   }
@@ -349,8 +347,10 @@ li {
 
 /* .............FOOTER...........*/
 /* .............OHMYFOOD ACCUEIL END..........*/
+
 /* ...////////////////////////////////...*/
 /* ...////////////////////////////////...*/
+
 /* .............MENU 1..........*/
 /* .............HEADER 1..........*/
 .header-menu1 {
@@ -425,19 +425,6 @@ li {
   margin-bottom: 0px;
   margin-top: 0px;
 }
-
-// .relative {
-//   position: relative;
-// }
-
-// .relative .heart1 {
-//   cursor: pointer;
-//   font-size: 25px;
-//   color: grey;
-//   z-index: 1;
-//   -webkit-transition: color 200ms;
-//   transition: color 200ms;
-// }
 
 /* ..Nouveau code..*/
 .relative {
@@ -696,22 +683,8 @@ li {
     }
   }
 }
-
-// .explore {
-//   &--accueil {
-//     padding-bottom: 80px;
-//   }
-//   &__btn--accueil {
-//     padding-left: 50px;
-//     padding-right: 50px;
-//     &--effect:hover {
-//       box-shadow: 2px 5px 10px #363333;
-//       background-color: #ae80e5;
-//       background-blend-mode: lighten;
-//     }
-//   }
-// }
 /* .............EXPLORE ACCUEIL END..........*/
+
 /* .............FOOTER START..........*/
 .footer {
   &--accueil {
