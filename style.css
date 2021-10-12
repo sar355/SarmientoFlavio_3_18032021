@@ -230,7 +230,7 @@ p {
   margin-bottom: 50px;
 }
 
-.tutorial h1 {
+.tutorial h2 {
   margin-left: 15px;
 }
 
@@ -299,7 +299,7 @@ p {
   padding-bottom: 50px;
 }
 
-.restaurants h1 {
+.restaurants h2 {
   margin-left: 15px;
 }
 
@@ -354,6 +354,12 @@ p {
   margin-bottom: 0px;
 }
 
+/* ...pseudo-element "nouveau" invisible...*/
+.block-restaurant--nouveau::before {
+  visibility: hidden;
+}
+
+/* ...pseudo-element "nouveau" invisible...*/
 .block-restaurant--mb {
   margin-bottom: 0px;
 }

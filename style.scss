@@ -145,6 +145,10 @@ p {
   text-align: center;
   padding: 20px 30px 55px 30px;
   background-color: #f6f6f6;
+  // div {
+  //   font-size: 24px;
+  //   font-weight: bolder;
+  // }
   p {
     font-weight: 300;
   }
@@ -172,8 +176,9 @@ p {
   //   border: solid 2px red;
   margin-top: 50px;
   margin-bottom: 50px;
-  h1 {
+  h2 {
     margin-left: 15px;
+    // font-size: 20px;
   }
 }
 
@@ -232,10 +237,11 @@ p {
   background-color: #f6f6f6;
   padding-top: 30px;
   padding-bottom: 50px;
-  h1 {
+  h2 {
     margin-left: 15px;
   }
 }
+
 
 .block-restaurant {
   position: relative;
@@ -277,6 +283,14 @@ p {
     }
   }
 }
+
+/* ...pseudo-element "nouveau" invisible...*/
+.block-restaurant--nouveau {
+  &::before {
+    visibility: hidden;
+  }
+}
+/* ...pseudo-element "nouveau" invisible...*/
 
 .block-restaurant--mb {
   margin-bottom: 0px;
